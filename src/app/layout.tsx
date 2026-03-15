@@ -1,28 +1,43 @@
 import type { Metadata } from "next";
+import { Inter, DM_Serif_Display } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const dmSerif = DM_Serif_Display({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-dm-serif",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "American Painting LLC - Las Vegas Painting Since 1986 | 11,000+ Homes Painted",
+  title:
+    "American Painting | Oklahoma City's Trusted Painting Professionals",
   description:
-    "American Painting LLC has been Las Vegas's most trusted painting contractor since 1986. BBB A+ accredited, 11,000+ homes painted. Interior, exterior, stucco, epoxy coatings & more. Call (702) 259-6006 for a free estimate.",
+    "American Painting provides professional interior and exterior painting services in Oklahoma City, OK. Residential, commercial, cabinets, decks, and more. Licensed & insured. Call (405) 875-2475 for a free estimate.",
   keywords:
-    "Las Vegas painting contractor, house painters Las Vegas, interior painting Las Vegas, exterior painting Las Vegas, stucco repair Las Vegas, epoxy coatings Las Vegas, BBB A+ painter",
+    "Oklahoma City painting contractor, house painters OKC, interior painting Oklahoma City, exterior painting OKC, commercial painting Oklahoma City, cabinet refinishing OKC, deck staining Oklahoma City",
   openGraph: {
-    title: "American Painting LLC - Las Vegas Painting Since 1986",
+    title: "American Painting | Oklahoma City's Trusted Painting Professionals",
     description:
-      "40+ years of trusted painting services in Las Vegas. BBB A+ accredited, 11,000+ homes painted. Free estimates.",
+      "Professional painting services for Oklahoma City homes and businesses. Licensed, insured, and committed to quality. Free estimates.",
     type: "website",
     locale: "en_US",
-    url: "https://americanpaintingllc.com",
-    siteName: "American Painting LLC",
+    url: "https://americanpaintingokc.com",
+    siteName: "American Painting",
   },
   twitter: {
     card: "summary_large_image",
-    title: "American Painting LLC - Las Vegas Painting Since 1986",
+    title: "American Painting | OKC Painting Professionals",
     description:
-      "40+ years of trusted painting services in Las Vegas. BBB A+ accredited, 11,000+ homes painted.",
+      "Professional painting services for Oklahoma City homes and businesses. Licensed & insured. Free estimates.",
   },
   robots: {
     index: true,
@@ -33,54 +48,46 @@ export const metadata: Metadata = {
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://americanpaintingllc.com",
-  name: "American Painting LLC",
+  "@id": "https://americanpaintingokc.com",
+  name: "American Painting",
   description:
-    "Las Vegas's most trusted painting contractor since 1986. BBB A+ accredited with 11,000+ homes painted. Interior, exterior, stucco repair, epoxy coatings, and more.",
-  url: "https://americanpaintingllc.com",
-  telephone: "+17022596006",
-  email: "showup702@gmail.com",
+    "Oklahoma City's trusted painting professionals. We provide premium interior and exterior painting, commercial painting, cabinet refinishing, deck staining, and drywall repair services. Licensed and insured.",
+  url: "https://americanpaintingokc.com",
+  telephone: "+14058752475",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "2375 E Tropicana Ave, Ste 207",
-    addressLocality: "Las Vegas",
-    addressRegion: "NV",
-    postalCode: "89119",
+    addressLocality: "Oklahoma City",
+    addressRegion: "OK",
     addressCountry: "US",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 36.0992,
-    longitude: -115.1175,
+    latitude: 35.4676,
+    longitude: -97.5164,
   },
-  areaServed: {
-    "@type": "City",
-    name: "Las Vegas",
-    sameAs: "https://en.wikipedia.org/wiki/Las_Vegas",
-  },
-  foundingDate: "1986",
-  founder: {
-    "@type": "Person",
-    name: "Brian J. Higgs",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "19",
-    bestRating: "5",
-  },
-  hasCredential: {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "BBB A+ Accreditation",
-    recognizedBy: {
-      "@type": "Organization",
-      name: "Better Business Bureau",
-    },
-  },
+  areaServed: [
+    { "@type": "City", name: "Oklahoma City" },
+    { "@type": "City", name: "Edmond" },
+    { "@type": "City", name: "Norman" },
+    { "@type": "City", name: "Moore" },
+    { "@type": "City", name: "Midwest City" },
+    { "@type": "City", name: "Del City" },
+    { "@type": "City", name: "Yukon" },
+    { "@type": "City", name: "Bethany" },
+    { "@type": "City", name: "Mustang" },
+    { "@type": "City", name: "Nichols Hills" },
+  ],
   priceRange: "$$",
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
-    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ],
     opens: "07:00",
     closes: "18:00",
   },
@@ -93,18 +100,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${dmSerif.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
