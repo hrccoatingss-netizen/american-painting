@@ -4,12 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 
 const services = [
-  { name: "Interior House Painting", href: "/services/interior-painting" },
-  { name: "Exterior House Painting", href: "/services/exterior-painting" },
+  { name: "Interior Residential", href: "/services/interior-painting" },
+  { name: "Exterior Residential", href: "/services/exterior-painting" },
   { name: "Commercial Painting", href: "/services/commercial-painting" },
-  { name: "Cabinet Refinishing", href: "/services/cabinet-refinishing" },
-  { name: "Deck & Fence Staining", href: "/services/deck-fence-staining" },
-  { name: "Drywall Repair & Texturing", href: "/services/drywall-repair" },
+  { name: "Cabinet Painting", href: "/services/cabinet-refinishing" },
+  { name: "Drywall Repair", href: "/services/drywall-repair" },
+  { name: "Power Washing", href: "/services/power-washing" },
 ];
 
 export default function Header() {

@@ -1,25 +1,25 @@
 import Link from "next/link";
 
 const services = [
-  { name: "Interior House Painting", href: "/services/interior-painting" },
-  { name: "Exterior House Painting", href: "/services/exterior-painting" },
+  { name: "Interior Residential", href: "/services/interior-painting" },
+  { name: "Exterior Residential", href: "/services/exterior-painting" },
   { name: "Commercial Painting", href: "/services/commercial-painting" },
-  { name: "Cabinet Refinishing", href: "/services/cabinet-refinishing" },
-  { name: "Deck & Fence Staining", href: "/services/deck-fence-staining" },
-  { name: "Drywall Repair & Texturing", href: "/services/drywall-repair" },
+  { name: "Cabinet Painting", href: "/services/cabinet-refinishing" },
+  { name: "Drywall Repair", href: "/services/drywall-repair" },
+  { name: "Power Washing", href: "/services/power-washing" },
 ];
 
 const serviceAreas = [
   "Oklahoma City",
-  "Edmond",
-  "Norman",
   "Moore",
+  "Norman",
+  "Edmond",
   "Midwest City",
   "Del City",
   "Yukon",
-  "Bethany",
   "Mustang",
-  "Nichols Hills",
+  "Bethany",
+  "Tuttle",
 ];
 
 export default function Footer() {
@@ -43,7 +43,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              Oklahoma City&apos;s trusted painting professionals. Quality
+              Family-owned and operated for over 25 years. Quality
               craftsmanship for homes and businesses across the OKC metro.
             </p>
             <div className="flex items-center gap-2 text-sm text-gray-300">

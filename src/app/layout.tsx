@@ -51,7 +51,7 @@ const localBusinessJsonLd = {
   "@id": "https://americanpaintingokc.com",
   name: "American Painting",
   description:
-    "Oklahoma City's trusted painting professionals. We provide premium interior and exterior painting, commercial painting, cabinet refinishing, deck staining, and drywall repair services. Licensed and insured.",
+    "Family-owned and operated for over 25 years. Oklahoma City's trusted painting professionals providing premium interior and exterior painting, commercial painting, cabinet painting, drywall repair, and power washing services. Licensed and insured.",
   url: "https://americanpaintingokc.com",
   telephone: "+14058752475",
   address: {
@@ -67,15 +67,15 @@ const localBusinessJsonLd = {
   },
   areaServed: [
     { "@type": "City", name: "Oklahoma City" },
-    { "@type": "City", name: "Edmond" },
-    { "@type": "City", name: "Norman" },
     { "@type": "City", name: "Moore" },
+    { "@type": "City", name: "Norman" },
+    { "@type": "City", name: "Edmond" },
     { "@type": "City", name: "Midwest City" },
     { "@type": "City", name: "Del City" },
     { "@type": "City", name: "Yukon" },
-    { "@type": "City", name: "Bethany" },
     { "@type": "City", name: "Mustang" },
-    { "@type": "City", name: "Nichols Hills" },
+    { "@type": "City", name: "Bethany" },
+    { "@type": "City", name: "Tuttle" },
   ],
   priceRange: "$$",
   openingHoursSpecification: {
@@ -87,9 +87,10 @@ const localBusinessJsonLd = {
       "Thursday",
       "Friday",
       "Saturday",
+      "Sunday",
     ],
     opens: "07:00",
-    closes: "18:00",
+    closes: "20:00",
   },
   sameAs: [],
 };

@@ -4,124 +4,46 @@ import ContactForm from "@/components/ContactForm";
 
 const services = [
   {
-    title: "Interior House Painting",
+    title: "Interior Residential",
     description:
       "Transform your living spaces with expert interior painting. Flawless walls, smooth ceilings, and crisp trim work that brings your vision to life.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-        />
-      </svg>
-    ),
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
   },
   {
-    title: "Exterior House Painting",
+    title: "Exterior Residential",
     description:
-      "Protect and beautify your home with premium exterior painting built to withstand Oklahoma's weather. Lasting curb appeal you can be proud of.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-        />
-      </svg>
-    ),
+      "Protect and beautify your home with premium exterior painting built to withstand Oklahoma weather. Lasting curb appeal you can be proud of.",
+    image:
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
   },
   {
     title: "Commercial Painting",
     description:
-      "Professional painting for offices, retail spaces, restaurants, and commercial properties. Minimal disruption, maximum impact for your business.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-        />
-      </svg>
-    ),
+      "Professional painting for offices, retail spaces, restaurants, and commercial properties. Minimal disruption, maximum impact.",
+    image:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
   },
   {
-    title: "Cabinet Refinishing",
+    title: "Cabinet Painting",
     description:
       "Give your kitchen a fresh, modern look without the cost of a full remodel. Expert cabinet painting and refinishing that transforms any space.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-        />
-      </svg>
-    ),
+    image:
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
   },
   {
-    title: "Deck & Fence Staining",
-    description:
-      "Restore and protect your outdoor wood surfaces with professional staining. We prep, clean, and apply premium stains that last through Oklahoma seasons.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Drywall Repair & Texturing",
+    title: "Drywall Repair",
     description:
       "Seamless drywall repairs, patching, and texture matching. We fix the damage first, then paint for a flawless, like-new finish every time.",
-    icon: (
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-        />
-      </svg>
-    ),
+    image:
+      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80",
+  },
+  {
+    title: "Power Washing",
+    description:
+      "Restore your home's exterior surfaces with professional power washing. Driveways, siding, decks, and patios cleaned and prepped for lasting results.",
+    image:
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
   },
 ];
 
@@ -152,127 +74,68 @@ const processSteps = [
   },
 ];
 
-const whyChooseUs = [
-  {
-    title: "Licensed & Insured",
-    description:
-      "Fully licensed and insured for your complete protection and peace of mind on every project.",
-    icon: (
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Premium Materials",
-    description:
-      "We use top-tier Sherwin-Williams and Benjamin Moore paints for lasting, beautiful results.",
-    icon: (
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "OKC Local Team",
-    description:
-      "We live and work right here in Oklahoma City. We know the local climate and what works best.",
-    icon: (
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Guaranteed Results",
-    description:
-      "We stand behind every project. If you are not 100% satisfied, we will make it right.",
-    icon: (
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.5}
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    ),
-  },
-];
-
 const reviews = [
   {
     name: "Mark D.",
+    location: "Oklahoma City, OK",
     rating: 5,
     text: "American Painting did an outstanding job on our entire home exterior. The crew was professional, showed up on time every day, and the final result exceeded our expectations. Our house looks brand new. Highly recommend them to anyone in OKC.",
     source: "Google",
   },
   {
     name: "Jennifer L.",
+    location: "Edmond, OK",
     rating: 5,
     text: "We hired American Painting for our kitchen cabinets and the interior of our living room and hallways. The attention to detail was incredible. Clean lines, no drips, and they finished ahead of schedule. Already planning to have them back for the bedrooms.",
     source: "Google",
   },
   {
     name: "David & Karen W.",
+    location: "Norman, OK",
     rating: 5,
     text: "After getting three quotes, we went with American Painting and could not be happier. Fair pricing, excellent communication throughout the project, and the quality speaks for itself. They even helped us pick the perfect color palette for our home.",
     source: "Google",
   },
 ];
 
+const galleryImages = [
+  {
+    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
+    alt: "Beautiful interior living room painted by American Painting",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80",
+    alt: "Stunning exterior home painting in Oklahoma City",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    alt: "Modern kitchen with freshly painted cabinets",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
+    alt: "Modern home exterior painting project",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80",
+    alt: "Beautifully painted bedroom with clean lines",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+    alt: "Commercial office space freshly painted",
+  },
+];
+
 const serviceAreas = [
   "Oklahoma City",
-  "Edmond",
-  "Norman",
   "Moore",
+  "Norman",
+  "Edmond",
   "Midwest City",
   "Del City",
   "Yukon",
-  "Bethany",
   "Mustang",
-  "Nichols Hills",
+  "Bethany",
+  "Tuttle",
 ];
 
 const faqs = [
@@ -284,7 +147,7 @@ const faqs = [
   {
     question: "What areas do you serve?",
     answer:
-      "We serve Oklahoma City and the greater OKC metro area, including Edmond, Norman, Moore, Midwest City, Del City, Yukon, Bethany, Mustang, Nichols Hills, and surrounding communities.",
+      "We serve Oklahoma City and the greater OKC metro area, including Moore, Norman, Edmond, Midwest City, Del City, Yukon, Mustang, Bethany, Tuttle, and surrounding communities.",
   },
   {
     question: "Are you licensed and insured?",
@@ -330,57 +193,75 @@ export default function HomePage() {
       />
 
       {/* ==================== HERO ==================== */}
-      <section className="relative bg-gradient-to-br from-primary via-primary-light to-primary overflow-hidden">
-        {/* Subtle geometric pattern overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        {/* Full-bleed background image */}
+        <img
+          src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&q=80"
+          alt="Beautiful American home exterior"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
         />
+        {/* Dark patriotic navy gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary/85 to-primary/60" />
         {/* Gold accent line at top */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-secondary-light to-secondary" />
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary via-secondary-light to-secondary z-10" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-36">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 lg:py-40 w-full">
           <div className="max-w-3xl animate-fade-in-up">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
-              <svg
-                className="w-4 h-4 text-secondary"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <span className="text-sm font-semibold text-white/90 tracking-wide">
-                Oklahoma City&apos;s Trusted Painting Professionals
+            {/* Badges row */}
+            <div className="flex flex-wrap gap-3 mb-8">
+              <span className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm border border-secondary/40 rounded-full px-4 py-2 text-sm font-bold text-secondary">
+                25+ Years
+              </span>
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-bold text-white/90">
+                Family-Owned
+              </span>
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-bold text-white/90">
+                Serving OKC
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-[var(--font-dm-serif)] text-white leading-tight mb-6">
-              Quality You Can Trust.{" "}
-              <span className="text-secondary">Results You Can See.</span>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-[var(--font-dm-serif)] text-white leading-[1.1] mb-6">
+              American{" "}
+              <span className="text-secondary">Painting</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
-              Professional painting services for Oklahoma City homes and
-              businesses. From fresh interiors to stunning exteriors, we deliver
-              craftsmanship that stands the test of time.
+            <p className="text-xl sm:text-2xl text-gray-200 mb-4 font-[var(--font-dm-serif)]">
+              Oklahoma City&apos;s Family-Owned Painting Contractor Since 1999
+            </p>
+
+            <p className="text-lg text-gray-300 mb-10 leading-relaxed max-w-2xl">
+              For over 25 years, we have been transforming homes and businesses
+              across the OKC metro with premium painting services built on
+              American values, hard work, and family pride.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link
                 href="/#contact"
-                className="bg-gradient-to-r from-accent to-accent-warm text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:shadow-accent/30 transition-all text-center animate-pulse-glow"
+                className="bg-gradient-to-r from-accent to-accent-warm text-white px-10 py-5 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-accent/40 transition-all text-center animate-pulse-glow inline-flex items-center justify-center gap-2"
               >
                 Get Your Free Estimate
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </Link>
               <a
                 href="tel:+14058752475"
-                className="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all text-center flex items-center justify-center gap-2"
+                className="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/20 transition-all text-center flex items-center justify-center gap-3"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -395,101 +276,63 @@ export default function HomePage() {
                 (405) 875-2475
               </a>
             </div>
-
-            {/* Social proof badges */}
-            <div className="flex flex-wrap gap-6 text-sm text-white/80">
-              <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-secondary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-                <span className="font-semibold">Licensed</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-secondary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-                <span className="font-semibold">Insured</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-secondary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                <span className="font-semibold">OKC Local</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* ==================== STATS ==================== */}
-      <section className="bg-white py-16 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ==================== TRUST BAR ==================== */}
+      <section className="bg-primary border-t-4 border-secondary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
-            <div>
-              <p className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary">
-                OKC
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <p className="text-2xl sm:text-3xl font-[var(--font-dm-serif)] text-secondary">
+                25+
               </p>
-              <p className="text-sm font-semibold text-gray-500 mt-1 uppercase tracking-wide">
-                Proud
-              </p>
-            </div>
-            <div>
-              <p className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary">
-                Pro
-              </p>
-              <p className="text-sm font-semibold text-gray-500 mt-1 uppercase tracking-wide">
-                Results
+              <p className="text-sm font-semibold text-gray-300 uppercase tracking-wide">
+                Years Experience
               </p>
             </div>
-            <div>
-              <p className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary">
-                100%
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <p className="text-2xl sm:text-3xl font-[var(--font-dm-serif)] text-white">
+                Family
               </p>
-              <p className="text-sm font-semibold text-gray-500 mt-1 uppercase tracking-wide">
-                Satisfaction
+              <p className="text-sm font-semibold text-gray-300 uppercase tracking-wide">
+                Owned & Operated
               </p>
             </div>
-            <div>
-              <p className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary">
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <p className="text-2xl sm:text-3xl font-[var(--font-dm-serif)] text-white">
+                Licensed
+              </p>
+              <p className="text-sm font-semibold text-gray-300 uppercase tracking-wide">
+                & Insured
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+                <svg className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+              </div>
+              <p className="text-2xl sm:text-3xl font-[var(--font-dm-serif)] text-white">
                 Free
               </p>
-              <p className="text-sm font-semibold text-gray-500 mt-1 uppercase tracking-wide">
+              <p className="text-sm font-semibold text-gray-300 uppercase tracking-wide">
                 Estimates
               </p>
             </div>
@@ -498,13 +341,13 @@ export default function HomePage() {
       </section>
 
       {/* ==================== SERVICES ==================== */}
-      <section className="bg-surface py-20 sm:py-24">
+      <section className="bg-surface py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
               What We Do
             </span>
-            <h2 className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-primary mb-4">
               Our Painting Services
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -512,37 +355,90 @@ export default function HomePage() {
               homes, businesses, and commercial properties.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <div
                 key={service.title}
-                className="group bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-transparent relative overflow-hidden"
+                className="group relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
               >
-                {/* Red-to-navy gradient top border */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-accent-warm to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="text-accent mb-5 group-hover:scale-110 transition-transform inline-block">
-                  {service.icon}
+                {/* Background image */}
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                {/* Dark overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/95 via-primary/60 to-transparent" />
+                {/* Content */}
+                <div className="relative h-full flex flex-col justify-end p-8">
+                  <h3 className="text-2xl font-[var(--font-dm-serif)] text-white mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-200 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* ==================== BEFORE/AFTER ==================== */}
+      <section className="bg-white py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
+              See The Difference
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-primary mb-4">
+              Before & After
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Nothing tells the story better than the transformation itself. See
+              what 25 years of expertise can do for your home.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl group">
+              <img
+                src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&q=80"
+                alt="Home exterior before painting"
+                loading="lazy"
+                className="w-full h-80 sm:h-96 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <span className="inline-block bg-gray-600 text-white text-sm font-bold uppercase tracking-wider px-4 py-2 rounded-full">
+                  Before
+                </span>
+              </div>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl group">
+              <img
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80"
+                alt="Home exterior after painting by American Painting"
+                loading="lazy"
+                className="w-full h-80 sm:h-96 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <span className="inline-block bg-accent text-white text-sm font-bold uppercase tracking-wider px-4 py-2 rounded-full">
+                  After
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ==================== PROCESS ==================== */}
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-surface-alt py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
               How It Works
             </span>
-            <h2 className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-primary mb-4">
               Our Simple Process
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -555,17 +451,17 @@ export default function HomePage() {
               <div key={item.step} className="text-center relative">
                 {/* Connector line */}
                 {i < processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-[60%] w-[80%] h-px bg-gradient-to-r from-secondary/40 to-transparent" />
+                  <div className="hidden lg:block absolute top-10 left-[60%] w-[80%] h-px bg-gradient-to-r from-secondary/40 to-transparent" />
                 )}
-                <div className="w-16 h-16 bg-primary rounded-full mx-auto mb-5 flex items-center justify-center">
-                  <span className="text-lg font-bold text-secondary">
+                <div className="w-20 h-20 bg-primary rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
+                  <span className="text-2xl font-bold text-secondary">
                     {item.step}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-primary mb-2">
+                <h3 className="text-xl font-bold text-primary mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -575,138 +471,77 @@ export default function HomePage() {
       </section>
 
       {/* ==================== ABOUT ==================== */}
-      <section className="bg-surface-alt py-20 sm:py-24">
+      <section className="bg-white py-20 sm:py-28 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
                 About Us
               </span>
-              <h2 className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary mb-6">
-                Oklahoma City&apos;s Painting Professionals
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-primary mb-6">
+                25 Years of Family Values
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                American Painting is an established Oklahoma City painting
-                company dedicated to quality craftsmanship and customer
-                satisfaction. We take pride in every project, whether it is a
-                single room refresh or a complete commercial build-out.
+                American Painting is a family-owned and operated painting company
+                that has served the Oklahoma City metro for over 25 years. What
+                started as a family trade has grown into one of OKC&apos;s most
+                trusted painting contractors through honest work, fair pricing,
+                and results that speak for themselves.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                As a local OKC team, we understand the unique challenges of
-                Oklahoma&apos;s climate and use premium materials and proven
-                techniques to ensure your paint job looks great and lasts for
-                years. Our commitment to professionalism, reliability, and
-                outstanding results has made us a trusted name in the community.
+                We believe in the values that built this country: hard work,
+                integrity, and treating people right. Every home we paint, every
+                handshake we make, and every promise we keep reflects our
+                commitment to doing things the American way. Your home deserves
+                nothing less.
               </p>
-              <Link
-                href="/about"
-                className="text-accent font-bold text-lg hover:underline inline-flex items-center gap-2 group"
-              >
-                Learn More About Us
-                <svg
-                  className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link>
-            </div>
-            <div className="flex justify-center">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-secondary/20 to-accent/10 rounded-2xl" />
-                <div className="relative bg-white rounded-xl p-10 shadow-lg text-center">
-                  <div className="w-28 h-28 bg-gradient-to-br from-primary to-primary-light rounded-full mx-auto mb-6 flex items-center justify-center border-4 border-secondary/30">
-                    <span className="text-3xl font-[var(--font-dm-serif)] text-secondary">
-                      AP
-                    </span>
-                  </div>
-                  <h3 className="text-2xl font-[var(--font-dm-serif)] text-primary mb-1">
-                    American Painting
-                  </h3>
-                  <p className="text-accent font-semibold mb-4">
-                    Oklahoma City, OK
-                  </p>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                    Professional, reliable, and committed to delivering
-                    exceptional results on every painting project. Your
-                    satisfaction is our guarantee.
-                  </p>
-                  <div className="flex flex-wrap items-center justify-center gap-3 text-xs">
-                    <span className="bg-surface-alt text-primary px-3 py-1.5 rounded-full font-semibold">
-                      Licensed
-                    </span>
-                    <span className="bg-surface-alt text-primary px-3 py-1.5 rounded-full font-semibold">
-                      Insured
-                    </span>
-                    <span className="bg-surface-alt text-primary px-3 py-1.5 rounded-full font-semibold">
-                      Local
-                    </span>
-                  </div>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2 bg-surface px-4 py-2 rounded-full">
+                  <svg className="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-primary text-sm">Family-Owned Since 1999</span>
+                </div>
+                <div className="flex items-center gap-2 bg-surface px-4 py-2 rounded-full">
+                  <svg className="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-primary text-sm">Thousands of Homes Painted</span>
+                </div>
+                <div className="flex items-center gap-2 bg-surface px-4 py-2 rounded-full">
+                  <svg className="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="font-semibold text-primary text-sm">Premium Materials Only</span>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ==================== WHY CHOOSE US ==================== */}
-      <section className="bg-primary py-20 sm:py-24 relative overflow-hidden">
-        {/* Subtle pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
-              Why Us
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-white mb-4">
-              Why OKC Homeowners Choose Us
-            </h2>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              When it comes to painting your home or business, experience and
-              trust matter.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {whyChooseUs.map((item) => (
-              <div
-                key={item.title}
-                className="text-center p-8 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-secondary/30 transition-all"
-              >
-                <div className="text-secondary mx-auto mb-4 inline-block">
-                  {item.icon}
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {item.description}
-                </p>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-secondary/20 to-accent/10 rounded-2xl" />
+              <img
+                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80"
+                alt="Professional painter at work representing American Painting"
+                loading="lazy"
+                className="relative w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+              />
+              {/* Floating badge */}
+              <div className="absolute -bottom-6 -left-6 bg-primary text-white rounded-2xl p-6 shadow-xl">
+                <p className="text-4xl font-[var(--font-dm-serif)] text-secondary">25+</p>
+                <p className="text-sm font-semibold uppercase tracking-wide">Years in OKC</p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* ==================== REVIEWS ==================== */}
-      <section className="bg-surface py-20 sm:py-24">
+      <section className="bg-surface py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
               Testimonials
             </span>
-            <h2 className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-primary mb-4">
               What Our Customers Say
             </h2>
             <p className="text-gray-600 text-lg">
@@ -717,9 +552,13 @@ export default function HomePage() {
             {reviews.map((review, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow"
+                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 relative"
               >
-                <div className="flex gap-1 mb-4">
+                {/* Quote mark */}
+                <div className="absolute top-6 right-8 text-6xl font-[var(--font-dm-serif)] text-secondary/15 leading-none">
+                  &ldquo;
+                </div>
+                <div className="flex gap-1 mb-5">
                   {[...Array(review.rating)].map((_, j) => (
                     <svg
                       key={j}
@@ -731,12 +570,15 @@ export default function HomePage() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 leading-relaxed mb-6 relative z-10">
                   &ldquo;{review.text}&rdquo;
                 </p>
-                <div className="flex items-center justify-between">
-                  <span className="font-bold text-primary">{review.name}</span>
-                  <span className="text-sm text-gray-400">
+                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                  <div>
+                    <span className="font-bold text-primary block">{review.name}</span>
+                    <span className="text-sm text-gray-400">{review.location}</span>
+                  </div>
+                  <span className="text-xs text-gray-400 bg-surface px-3 py-1 rounded-full font-semibold">
                     via {review.source}
                   </span>
                 </div>
@@ -746,24 +588,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ==================== PHOTO GALLERY ==================== */}
+      <section className="bg-white py-20 sm:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
+              Our Work
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-primary mb-4">
+              Project Gallery
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Browse some of our recent painting projects across the Oklahoma
+              City metro area.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {galleryImages.map((image, i) => (
+              <div
+                key={i}
+                className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-[4/3]"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/30 transition-colors duration-500" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                  </svg>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ==================== SERVICE AREAS ==================== */}
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-surface-alt py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
             Where We Work
           </span>
-          <h2 className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary mb-4">
-            Service Areas
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-primary mb-4">
+            Serving the OKC Metro
           </h2>
-          <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
-            Proudly serving the Oklahoma City metro area and surrounding
-            communities.
+          <p className="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+            Proudly providing premium painting services to families and
+            businesses across the Oklahoma City metropolitan area.
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-4">
             {serviceAreas.map((area) => (
               <span
                 key={area}
-                className="bg-surface text-primary px-5 py-2.5 rounded-full font-semibold text-sm border border-gray-200 hover:border-accent hover:text-accent transition-colors"
+                className="bg-white text-primary px-6 py-3 rounded-full font-semibold text-base border border-gray-200 shadow-sm hover:border-accent hover:text-accent hover:shadow-md transition-all"
               >
                 {area}
               </span>
@@ -773,25 +654,32 @@ export default function HomePage() {
       </section>
 
       {/* ==================== CTA BANNER ==================== */}
-      <section className="bg-gradient-to-r from-accent to-accent-warm py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-white mb-4">
+      <section className="relative py-24 overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
+          alt="Beautiful modern home"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-accent/95 to-accent-warm/90" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-white mb-4">
             Ready to Transform Your Space?
           </h2>
-          <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-white/90 text-lg sm:text-xl mb-10 max-w-2xl mx-auto">
             Get a free, no-obligation estimate today. Let us show you why
-            Oklahoma City homeowners trust American Painting.
+            Oklahoma City families have trusted American Painting for over 25 years.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/#contact"
-              className="inline-block bg-white text-accent px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-50 transition-colors"
+              className="inline-block bg-white text-accent px-10 py-5 rounded-lg font-bold text-lg hover:bg-gray-50 hover:shadow-xl transition-all"
             >
               Get Free Estimate
             </Link>
             <a
               href="tel:+14058752475"
-              className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-accent transition-colors"
+              className="inline-block border-2 border-white text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-white hover:text-accent transition-all"
             >
               Call (405) 875-2475
             </a>
@@ -800,13 +688,13 @@ export default function HomePage() {
       </section>
 
       {/* ==================== FAQ ==================== */}
-      <section id="faq" className="bg-surface py-20 sm:py-24">
+      <section id="faq" className="bg-surface py-20 sm:py-28">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-3">
               FAQ
             </span>
-            <h2 className="text-3xl sm:text-4xl font-[var(--font-dm-serif)] text-primary mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-[var(--font-dm-serif)] text-primary mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600 text-lg">

@@ -3,12 +3,12 @@
 import { useState } from "react";
 
 const serviceOptions = [
-  "Interior House Painting",
-  "Exterior House Painting",
+  "Interior Residential Painting",
+  "Exterior Residential Painting",
   "Commercial Painting",
-  "Cabinet Refinishing",
-  "Deck & Fence Staining",
-  "Drywall Repair & Texturing",
+  "Cabinet Painting",
+  "Drywall Repair",
+  "Power Washing",
   "Color Consultation",
   "Other",
 ];
